@@ -324,7 +324,16 @@
     <url-pattern>/view/downloadSubmission</url-pattern>
   </servlet-mapping>
 
-  <servlet>
+    <servlet>
+        <servlet-name>deleteSubmission</servlet-name>
+        <servlet-class>org.opendatakit.aggregate.servlet.SubmissionDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteSubmission</servlet-name>
+        <url-pattern>/deleteSubmission</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
     <servlet-name>clearSessionAndLoginPage</servlet-name>
     <servlet-class>org.opendatakit.aggregate.servlet.ClearSessionThenLoginServlet</servlet-class>
   </servlet>
