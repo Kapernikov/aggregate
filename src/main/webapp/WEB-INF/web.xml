@@ -400,6 +400,15 @@
         <url-pattern>/view/downloadSubmission</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>deleteSubmission</servlet-name>
+        <servlet-class>org.opendatakit.aggregate.servlet.SubmissionDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteSubmission</servlet-name>
+        <url-pattern>/deleteSubmission</url-pattern>
+    </servlet-mapping>
+
 	<servlet>
 		<servlet-name>worksheet</servlet-name>
 		<servlet-class>org.opendatakit.aggregate.task.gae.servlet.WorksheetServlet</servlet-class>
